@@ -14,7 +14,7 @@ timestamp=$(date +"%Y-%m-%dT%TZ")
 ## functions ##
 
 function say() {
-    echo "$timestamp reployed: $1"
+    echo "$timestamp MOTD INSTALLER: $1"
 }
 
 function err() {
@@ -46,7 +46,7 @@ function set_motd() {
         check_root
         need_pkg update-motd toilet figlet lolcat wget
         chmod -x /etc/update-motd.d/*
-        wget -q -O - https://raw.githubusercontent.com/n00rm/motd/master/01-checkmk-motd /etc/update-motd.d/01-checkmk-motd
+        wget -P /etc/update-motd.d/ https://raw.githubusercontent.com/n00rm/motd/master/01-checkmk-motd 
         chmod +x /etc/update-motd.d/01-checkmk-motd
         update-motd >/dev/null
         say "MOTD Set"
