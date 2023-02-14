@@ -10,7 +10,7 @@ dim="\e[2m"
 W="\e[0;39m"
 G="\e[1;32m"
 
-toilet -f mono12 Checkmk | lolcat
+toilet -f mono12 Checkmk
 printf "$W           Support by IT Südwestfalen \n";
 
 # get load averages

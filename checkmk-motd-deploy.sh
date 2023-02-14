@@ -44,7 +44,7 @@ function set_motd() {
     
     if [ ! -f /etc/update-motd.d/01-checkmk-motd ]; then
         check_root
-        need_pkg update-motd toilet figlet lolcat wget
+        need_pkg update-motd toilet figlet wget
         chmod -x /etc/update-motd.d/*
         wget -P /etc/update-motd.d/ https://raw.githubusercontent.com/n00rm/motd/master/01-checkmk-motd 
         chmod +x /etc/update-motd.d/01-checkmk-motd
