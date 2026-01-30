@@ -10,7 +10,7 @@ dim="\e[2m"
 W="\e[0;39m"
 G="\e[1;32m"
 
-toilet -f mono12 {{TITLE}}
+toilet -f smmono12 {{TITLE}}
 printf "$W {{TAGLINE}}\n";
 
 # get load averages
