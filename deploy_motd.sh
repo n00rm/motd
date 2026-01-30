@@ -79,7 +79,7 @@ function ask_tagline() {
             fi
             ;;
         [Nn]* )
-            MOTD_TAGLINE="           Support by citadelle systems West GmbH "
+            MOTD_TAGLINE="Server MOTD by n0rm"
             ;;
         * )
             err "Please answer yes or no."
