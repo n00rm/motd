@@ -11,7 +11,7 @@ W="\e[0;39m"
 G="\e[1;32m"
 
 toilet -f mono12 {{TITLE}}
-printf "$W{{TAGLINE}}\n";
+printf "$W {{TAGLINE}}\n";
 
 # get load averages
 IFS=" " read LOAD1 LOAD5 LOAD15 <<<$(cat /proc/loadavg | awk '{ print $1,$2,$3 }')
