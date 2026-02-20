@@ -12,6 +12,12 @@ Collection of my 'Message of the Day' scripts.
   * [hddtemp](https://savannah.nongnu.org/projects/hddtemp/) (for `36-diskstatus`)
 
 
+### One-line installer
+
+```bash
+wget https://raw.githubusercontent.com/n00rm/motd/refs/heads/master/deploy_motd.sh && chmod +x deploy_motd.sh && sudo ./deploy_motd.sh
+```
+
 ### How do I set it up?
 
 Copy the files you want in your MOTD to `/etc/update-motd.d/`. Make sure you have the `PrintMotd`
